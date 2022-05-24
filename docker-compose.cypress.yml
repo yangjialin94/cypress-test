@@ -5,8 +5,6 @@ services:
         image: "cypress/included:3.2.0"
         depends_on:
             - web
-        environment:
-            - CYPRESS_baseUrl=https://jialin.nuveplatform.com/instances
         working_dir: /cypress
         volumes:
             - ./:/cypress
