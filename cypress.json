@@ -1,3 +1,5 @@
 {
-  "baseUrl": "https://jialin.nuveplatform.com/instances"
+  "pluginsFile": false,
+  "supportFile": false,
+  "video": true
 }

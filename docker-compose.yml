@@ -10,3 +10,13 @@ services:
             - /app/node_modules
         ports:
             - 3000:3000
+
+    cypress:
+        image: "cypress/included:3.2.0"
+        depends_on:
+            - web
+        environment:
+            - CYPRESS_baseUrl=http://web:3000
+        working_dir: /cypress
+        volumes:
+            - ./:/cypress
